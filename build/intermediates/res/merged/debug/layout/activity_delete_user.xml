@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.parse.starter.deleteuser">
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/delete_recyclerview"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+<!-- From: file:/D:/courses/android/parse/ParseStarterProject/src/main/res/layout/activity_delete_user.xml -->

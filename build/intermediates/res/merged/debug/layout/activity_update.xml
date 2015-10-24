@@ -1,0 +1,205 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            tools:context="com.parse.starter.Update">
+
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:layout_marginBottom="10dp" />
+
+
+            <TextView
+                android:id="@+id/txt_jd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etName"
+                android:text="Join Date" />
+
+            <EditText
+                android:id="@+id/etJoinDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_jd"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txt_ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etJoinDate"
+                android:text="EndDate" />
+
+            <EditText
+                android:id="@+id/etEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_ed"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txt_trainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEndDate"
+                android:paddingTop="10dp"
+                android:text="Personal trainer:" />
+
+            <RadioGroup
+
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/etEndDate"
+                android:layout_toRightOf="@+id/txt_trainer">
+
+                <RadioButton
+                    android:id="@+id/rb_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txt_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/radioGroup2"
+                android:paddingTop="10dp"
+                android:text="Membership Type:" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup1"
+                android:layout_marginTop="37dp"
+                android:layout_toEndOf="@+id/txt_type"
+                android:layout_toRightOf="@+id/txt_type">
+
+                <RadioButton
+                    android:id="@+id/rb_gym"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Gym" />
+
+                <RadioButton
+                    android:id="@+id/rb_cardio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Cardio" />
+
+                <RadioButton
+                    android:id="@+id/rb_gymcardio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Gym + Cardio" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txt_fees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/radioGroup2"
+                android:layout_marginTop="32dp"
+                android:paddingTop="10dp"
+                android:text="Fees paid:" />
+
+            <RadioGroup
+
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/radioGroup2"
+                android:layout_alignStart="@+id/radioGroup2"
+                android:layout_alignTop="@+id/txt_fees">
+
+                <RadioButton
+                    android:id="@+id/rb_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Paid" />
+                <RadioButton
+                    android:id="@+id/rb_halfpaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Half Paid" />
+                <RadioButton
+                    android:id="@+id/rb_unpaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Unpaid" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/day"
+                android:layout_below="@+id/radioGroup3"
+                android:layout_height="wrap_content"
+                android:text="Days count:"/>
+            <EditText
+                android:layout_below="@+id/day"
+                android:layout_width="match_parent"
+                android:id="@+id/days_count"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/amt1"
+                android:layout_below="@+id/days_count"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Amount paid:"/>
+            <EditText
+                android:layout_below="@+id/amt1"
+                android:layout_width="match_parent"
+                android:id="@+id/up_amount"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/up_amount"
+                android:text="Update" />
+
+        </RelativeLayout>
+</ScrollView><!-- From: file:/D:/courses/android/parse/ParseStarterProject/src/main/res/layout/activity_update.xml -->
