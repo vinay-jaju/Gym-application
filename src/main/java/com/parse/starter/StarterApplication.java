@@ -25,7 +25,7 @@ public class StarterApplication extends Application {
     Parse.enableLocalDatastore(this);
 
     // Add your initialization code here
-    Parse.initialize(this, "2M78Swoz4K6GDpSncYviqW2ce7S3FVJQC1Z41g4a", "o28rloFX83oUFlnYMrfnICv3h7e23Puw6A2rPBAX");
+    Parse.initialize(this, "/*Enter your key here*/", "/*Enter the key here"*/);
 
 
     ParseUser.enableAutomaticUser();
